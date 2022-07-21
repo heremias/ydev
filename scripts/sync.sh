@@ -1,1 +1,3 @@
-tar -xf ../sync.tar -C configs
+tar -xf sync.tar
+cd drupal
+drush cim --partial --source=/var/www/configs -y
