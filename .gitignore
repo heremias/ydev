@@ -74,3 +74,4 @@ drupal/data
 /logs
 /site.yml
 /ydev.code-workspace
+/--disable-copyfile
