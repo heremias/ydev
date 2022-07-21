@@ -63,6 +63,7 @@
 /local
 /hydra
 /sync.tar
+/sync.old
 /configs
 /web.tar
 drupal/data
