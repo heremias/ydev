@@ -40,4 +40,4 @@ docker cp sync.tar $cid:/var/www/sync.tar
 
 docker exec $cid /bin/sh -c "/var/www/scripts/sync.sh"
 #echo "ynumber:$ynumber cid:$cid uuid:$uuid "
-echo "tag:$tag ynumber:$ynumber cid:$cid uuid:$uuid sid:$sid"
+echo "tag:$tag\nynumber:$ynumber\ncid:$cid\nuuid:$uuid\nsid:$sid"
