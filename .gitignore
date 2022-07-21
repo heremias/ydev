@@ -76,3 +76,4 @@ drupal/data
 /site.yml
 /ydev.code-workspace
 /--disable-copyfile
+/branches.json
