@@ -71,3 +71,5 @@ drupal/data
 /*/.DS_Store
 /*/*/.DS_Store
 /.vscode
+/logs
+/site.yml
