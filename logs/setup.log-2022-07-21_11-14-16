@@ -1,0 +1,250 @@
+Untagged: ylocal:latest
+#1 [internal] load build definition from Dockerfile
+#1 sha256:808f25c61c124e1b9b6ee8d5d2b73944a6b8d489aefae257502a792c7f14dd67
+#1 transferring dockerfile: 37B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:bb20ade70b54f604fbca02c04c2cd007e383c4163fe21560b8baaef3aa35bc6e
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for ghcr.io/heremias/y-base-y-stage:latest
+#3 sha256:8e8853869836da55f17d383ada203fb5941acce03d787e2439fd3e74183a589a
+#3 DONE 0.4s
+
+#4 [1/3] FROM ghcr.io/heremias/y-base-y-stage:latest@sha256:0343520b77986d589cbbb5964b37133198f7fc964161b6e1fb0e5ab6fedb0721
+#4 sha256:86f4edec84a42c1f63ff987a4260c96ae4ae9aba2270021200c974801ec19479
+#4 DONE 0.0s
+
+#6 [internal] load build context
+#6 sha256:1af676c7c1b9909e1576a69ff84287d8a9bec98936ee094528f719463cfc6868
+#6 transferring context: 652B done
+#6 DONE 0.0s
+
+#5 [2/3] RUN chmod 777 -R /var/www/drupal/web/sites/default/files
+#5 sha256:46162a68f6e3325b2b20074badf4a05038d5ad4838a1d690d7a00935d5b35471
+#5 CACHED
+
+#7 [3/3] COPY ./scripts/ /var/www/scripts
+#7 sha256:ac6b450fb77f7856e77d8afe02ae51fe0e25b806464d59d4d4c13b44b1fec5e7
+#7 CACHED
+
+#8 exporting to image
+#8 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#8 exporting layers done
+#8 writing image sha256:847a06c6a0c0d7509effec8006c2cd51251f2ae86ea22594926ba5f33aef55c1
+#8 writing image sha256:847a06c6a0c0d7509effec8006c2cd51251f2ae86ea22594926ba5f33aef55c1 done
+#8 naming to docker.io/library/ylocal:e64f40e done
+#8 DONE 0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+23c6cefe8012b7bf119e6fbb2697c436eb720554e654d6d8571fd823da3276c8
+cid:23c6cefe8012
+uuid:6b53f744-c1bf-44f9-b178-c43dfe0b0a51
+ [notice] Differences of the active config to the export directory:
++------------+------------------------------------------------------+-----------+
+| Collection | Config                                               | Operation |
++------------+------------------------------------------------------+-----------+
+|            | block_content.type.basic                             | Create    |
+|            | block.block.claro_secondary_local_tasks              | Create    |
+|            | block.block.claro_primary_local_tasks                | Create    |
+|            | block.block.claro_page_title                         | Create    |
+|            | block.block.claro_local_actions                      | Create    |
+|            | claro.settings                                       | Create    |
+|            | comment.settings                                     | Create    |
+|            | comment.type.comment                                 | Create    |
+|            | contact.form.feedback                                | Create    |
+|            | contact.form.personal                                | Create    |
+|            | contact.settings                                     | Create    |
+|            | core.date_format.fallback                            | Create    |
+|            | core.date_format.html_date                           | Create    |
+|            | core.date_format.html_datetime                       | Create    |
+|            | core.date_format.html_month                          | Create    |
+|            | core.date_format.html_time                           | Create    |
+|            | core.date_format.html_week                           | Create    |
+|            | core.date_format.html_year                           | Create    |
+|            | core.date_format.html_yearless_date                  | Create    |
+|            | core.date_format.long                                | Create    |
+|            | core.date_format.medium                              | Create    |
+|            | core.date_format.short                               | Create    |
+|            | core.entity_view_mode.block_content.full             | Create    |
+|            | core.entity_view_mode.comment.full                   | Create    |
+|            | core.extension                                       | Create    |
+|            | core.menu.static_menu_link_overrides                 | Create    |
+|            | dblog.settings                                       | Create    |
+|            | field.settings                                       | Create    |
+|            | file.settings                                        | Create    |
+|            | filter.format.basic_html                             | Create    |
+|            | editor.editor.basic_html                             | Create    |
+|            | filter.format.full_html                              | Create    |
+|            | editor.editor.full_html                              | Create    |
+|            | filter.format.plain_text                             | Create    |
+|            | filter.format.restricted_html                        | Create    |
+|            | filter.settings                                      | Create    |
+|            | block.block.claro_help                               | Create    |
+|            | image.settings                                       | Create    |
+|            | image.style.large                                    | Create    |
+|            | image.style.medium                                   | Create    |
+|            | image.style.thumbnail                                | Create    |
+|            | image.style.wide                                     | Create    |
+|            | field.storage.node.field_image                       | Create    |
+|            | field.storage.node.comment                           | Create    |
+|            | core.entity_view_mode.node.teaser                    | Create    |
+|            | core.entity_view_mode.node.search_result             | Create    |
+|            | core.entity_view_mode.node.search_index              | Create    |
+|            | core.entity_view_mode.node.rss                       | Create    |
+|            | core.entity_view_mode.node.full                      | Create    |
+|            | node.settings                                        | Create    |
+|            | node.type.article                                    | Create    |
+|            | field.field.node.article.field_image                 | Create    |
+|            | field.field.node.article.comment                     | Create    |
+|            | node.type.page                                       | Create    |
+|            | core.base_field_override.node.page.promote           | Create    |
+|            | core.date_format.olivero_medium                      | Create    |
+|            | block.block.olivero_syndicate                        | Create    |
+|            | block.block.olivero_secondary_local_tasks            | Create    |
+|            | block.block.olivero_primary_local_tasks              | Create    |
+|            | block.block.olivero_primary_admin_actions            | Create    |
+|            | block.block.olivero_page_title                       | Create    |
+|            | block.block.olivero_help                             | Create    |
+|            | olivero.settings                                     | Create    |
+|            | rdf.mapping.comment.comment                          | Create    |
+|            | rdf.mapping.node.article                             | Create    |
+|            | rdf.mapping.node.page                                | Create    |
+|            | block.block.olivero_search_form_wide                 | Create    |
+|            | block.block.olivero_search_form_narrow               | Create    |
+|            | search.page.node_search                              | Create    |
+|            | search.settings                                      | Create    |
+|            | shortcut.set.default                                 | Create    |
+|            | block.block.olivero_site_branding                    | Create    |
+|            | block.block.olivero_powered                          | Create    |
+|            | block.block.olivero_messages                         | Create    |
+|            | block.block.olivero_content                          | Create    |
+|            | block.block.olivero_breadcrumbs                      | Create    |
+|            | block.block.claro_messages                           | Create    |
+|            | block.block.claro_content                            | Create    |
+|            | block.block.claro_breadcrumbs                        | Create    |
+|            | system.action.comment_delete_action                  | Create    |
+|            | system.action.comment_publish_action                 | Create    |
+|            | system.action.comment_save_action                    | Create    |
+|            | system.action.comment_unpublish_action               | Create    |
+|            | system.action.node_delete_action                     | Create    |
+|            | system.action.node_make_sticky_action                | Create    |
+|            | system.action.node_make_unsticky_action              | Create    |
+|            | system.action.node_promote_action                    | Create    |
+|            | system.action.node_publish_action                    | Create    |
+|            | system.action.node_save_action                       | Create    |
+|            | system.action.node_unpromote_action                  | Create    |
+|            | system.action.node_unpublish_action                  | Create    |
+|            | system.advisories                                    | Create    |
+|            | system.cron                                          | Create    |
+|            | system.date                                          | Create    |
+|            | system.diff                                          | Create    |
+|            | system.file                                          | Create    |
+|            | system.image                                         | Create    |
+|            | system.image.gd                                      | Create    |
+|            | system.logging                                       | Create    |
+|            | system.mail                                          | Create    |
+|            | system.maintenance                                   | Create    |
+|            | system.menu.account                                  | Create    |
+|            | block.block.olivero_account_menu                     | Create    |
+|            | system.menu.admin                                    | Create    |
+|            | system.menu.footer                                   | Create    |
+|            | system.menu.main                                     | Create    |
+|            | block.block.olivero_main_menu                        | Create    |
+|            | system.menu.tools                                    | Create    |
+|            | system.performance                                   | Create    |
+|            | system.rss                                           | Create    |
+|            | system.site                                          | Create    |
+|            | system.theme                                         | Create    |
+|            | system.theme.global                                  | Create    |
+|            | system.action.taxonomy_term_unpublish_action         | Create    |
+|            | system.action.taxonomy_term_publish_action           | Create    |
+|            | field.storage.node.field_tags                        | Create    |
+|            | core.entity_view_mode.taxonomy_term.full             | Create    |
+|            | taxonomy.settings                                    | Create    |
+|            | taxonomy.vocabulary.tags                             | Create    |
+|            | rdf.mapping.taxonomy_term.tags                       | Create    |
+|            | field.field.node.article.field_tags                  | Create    |
+|            | field.storage.node.body                              | Create    |
+|            | field.storage.comment.comment_body                   | Create    |
+|            | field.storage.block_content.body                     | Create    |
+|            | field.field.node.page.body                           | Create    |
+|            | field.field.node.article.body                        | Create    |
+|            | field.field.comment.comment.comment_body             | Create    |
+|            | field.field.block_content.basic.body                 | Create    |
+|            | core.entity_view_display.comment.comment.default     | Create    |
+|            | core.entity_view_display.block_content.basic.default | Create    |
+|            | core.entity_form_display.node.page.default           | Create    |
+|            | core.entity_form_display.node.article.default        | Create    |
+|            | core.entity_form_display.comment.comment.default     | Create    |
+|            | core.entity_form_display.block_content.basic.default | Create    |
+|            | text.settings                                        | Create    |
+|            | tour.tour.block-layout                               | Create    |
+|            | system.action.user_unblock_user_action               | Create    |
+|            | system.action.user_cancel_user_action                | Create    |
+|            | system.action.user_block_user_action                 | Create    |
+|            | search.page.user_search                              | Create    |
+|            | rdf.mapping.user.user                                | Create    |
+|            | field.storage.user.user_picture                      | Create    |
+|            | field.field.user.user.user_picture                   | Create    |
+|            | core.entity_view_mode.user.full                      | Create    |
+|            | core.entity_view_mode.user.compact                   | Create    |
+|            | core.entity_view_display.user.user.default           | Create    |
+|            | core.entity_view_display.user.user.compact           | Create    |
+|            | core.entity_view_display.node.page.teaser            | Create    |
+|            | core.entity_view_display.node.page.default           | Create    |
+|            | core.entity_view_display.node.article.teaser         | Create    |
+|            | core.entity_view_display.node.article.rss            | Create    |
+|            | core.entity_view_display.node.article.default        | Create    |
+|            | core.entity_form_mode.user.register                  | Create    |
+|            | core.entity_form_display.user.user.default           | Create    |
+|            | user.flood                                           | Create    |
+|            | user.mail                                            | Create    |
+|            | user.role.administrator                              | Create    |
+|            | system.action.user_remove_role_action.administrator  | Create    |
+|            | system.action.user_add_role_action.administrator     | Create    |
+|            | user.role.anonymous                                  | Create    |
+|            | user.role.authenticated                              | Create    |
+|            | user.role.content_editor                             | Create    |
+|            | system.action.user_remove_role_action.content_editor | Create    |
+|            | system.action.user_add_role_action.content_editor    | Create    |
+|            | user.settings                                        | Create    |
+|            | views.settings                                       | Create    |
+|            | views.view.archive                                   | Create    |
+|            | views.view.block_content                             | Create    |
+|            | views.view.comment                                   | Create    |
+|            | views.view.comments_recent                           | Create    |
+|            | views.view.content                                   | Create    |
+|            | views.view.content_recent                            | Create    |
+|            | views.view.files                                     | Create    |
+|            | views.view.frontpage                                 | Create    |
+|            | views.view.glossary                                  | Create    |
+|            | views.view.taxonomy_term                             | Create    |
+|            | views.view.user_admin_people                         | Create    |
+|            | views.view.watchdog                                  | Create    |
+|            | views.view.who_s_new                                 | Create    |
+|            | views.view.who_s_online                              | Create    |
+|            | automated_cron.settings                              | Create    |
+|            | field_ui.settings                                    | Create    |
+|            | menu_ui.settings                                     | Create    |
+|            | tour.tour.views-ui                                   | Create    |
+|            | update.settings                                      | Create    |
++------------+------------------------------------------------------+-----------+
+
+
+ // The .yml files in your export directory                                     
+ // (sites/default/files/config_C-h9BoTVbjgp7YfM1tj84Me19gckJSfsBIYf188RPEhWVO_Q
+ // P9OniQYa-08mh1Op1cbI3_YPag/sync) will be deleted and replaced with the      
+ // active config.: yes.                                                        
+
+ [success] Configuration successfully exported to sites/default/files/config_C-h9BoTVbjgp7YfM1tj84Me19gckJSfsBIYf188RPEhWVO_QP9OniQYa-08mh1Op1cbI3_YPag/sync.
+sites/default/files/config_C-h9BoTVbjgp7YfM1tj84Me19gckJSfsBIYf188RPEhWVO_QP9OniQYa-08mh1Op1cbI3_YPag/sync
+ [notice] The active configuration is identical to the configuration in the export directory (sites/default/files/config_C-h9BoTVbjgp7YfM1tj84Me19gckJSfsBIYf188RPEhWVO_QP9OniQYa-08mh1Op1cbI3_YPag/sync).
+sites/default/files/config_C-h9BoTVbjgp7YfM1tj84Me19gckJSfsBIYf188RPEhWVO_QP9OniQYa-08mh1Op1cbI3_YPag/sync
+sid:6b53f744-c1bf-44f9-b178-c43dfe0b0a51
+/Users/jeremyevans/ydev
+tar: ../sync.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
