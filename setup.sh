@@ -6,7 +6,7 @@ tag=$(source ./scripts/get.tag.sh)
 echo "Current commit: "$tag
 
 #Branch number input
-echo "Site ID: "
+echo "Enter Site ID: "
 read ynumber
 
 # Create new setup Log

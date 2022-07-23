@@ -8,7 +8,7 @@ COPY ./scripts/ /var/www/scripts
 #COPY configs.tar /var/www
 #COPY settings.php /var/www
 
-#RUN ./scripts/load.sh
+RUN ./scripts/load.sh
 #RUN ./drupal/cex.sh
 
 #EXPOSE 80
