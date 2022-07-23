@@ -77,3 +77,4 @@ drupal/data
 /ydev.code-workspace
 /--disable-copyfile
 /branches.json
+/*.tar
