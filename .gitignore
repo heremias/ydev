@@ -62,6 +62,7 @@
 /drupal
 /local
 /hydra
+/sync
 /sync.tar
 /sync.old
 /configs
