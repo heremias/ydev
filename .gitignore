@@ -63,6 +63,7 @@
 /local
 /hydra
 /sync
+/sync/*
 /sync.tar
 /sync.old
 /configs
