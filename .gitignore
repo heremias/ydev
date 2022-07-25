@@ -62,7 +62,9 @@
 /drupal
 /local
 /hydra
+/sync
 /sync.tar
+/sync.old
 /configs
 /web.tar
 drupal/data
@@ -71,3 +73,9 @@ drupal/data
 /*/.DS_Store
 /*/*/.DS_Store
 /.vscode
+/logs
+/site.yml
+/ydev.code-workspace
+/--disable-copyfile
+/branches.json
+/*.tar.gz

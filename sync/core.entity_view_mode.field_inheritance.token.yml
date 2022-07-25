@@ -1,0 +1,10 @@
+uuid: c22b599d-c542-4886-8094-1eed0959f451
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_inheritance
+id: field_inheritance.token
+label: Token
+targetEntityType: field_inheritance
+cache: true
