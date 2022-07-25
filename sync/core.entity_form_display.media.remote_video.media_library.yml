@@ -1,4 +1,4 @@
-uuid: 68b3d034-1619-4f51-8d62-17fd297a740f
+uuid: d952800e-c695-4701-ae01-e1d915e4b56a
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,6 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
-  module:
-    - field_layout
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 _core:
   default_config_hash: TBgPW-uaXRaICBwLaVc16rXpRiLSknDIdF9q0XL7qso
 id: media.remote_video.media_library

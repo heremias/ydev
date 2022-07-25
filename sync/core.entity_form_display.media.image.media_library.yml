@@ -1,4 +1,4 @@
-uuid: d9f6ce4e-f5ea-4284-9b03-30740121da32
+uuid: 141e6c6a-eead-40c7-9aee-88ca93bb57ee
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - field_layout
-    - layout_discovery
-    - svg_image
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
+    - image
 _core:
   default_config_hash: BMLrK4zKp8-FFnMseBdT_6h6YipUsKRfbDf_3WUB5HA
 id: media.image.media_library

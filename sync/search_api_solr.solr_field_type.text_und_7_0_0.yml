@@ -1,4 +1,4 @@
-uuid: 35f102b7-dc4f-426d-b860-30cb49cfb9e5
+uuid: 9538adb1-ca30-4321-b133-b19d6bcf247c
 langcode: en
 status: true
 dependencies: {  }
@@ -57,9 +57,9 @@ field_type:
       filters:
         -
           class: solr.SynonymGraphFilterFactory
-          ignoreCase: true
           synonyms: synonyms_und.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -188,6 +188,8 @@ solr_configs:
 text_files:
   stopwords: |
 
+  synonyms: |
+    drupal, durpal
   protwords: |
 
   accents: |
@@ -339,5 +341,3 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
-  synonyms: |
-    drupal, durpal

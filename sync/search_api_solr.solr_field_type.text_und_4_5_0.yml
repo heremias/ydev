@@ -1,4 +1,4 @@
-uuid: 2bcd70f6-ee16-409c-8ae4-22aefdd8f669
+uuid: 0d17c31c-6527-43b8-8c7d-63eb0a8e9b95
 langcode: en
 status: true
 dependencies: {  }
@@ -57,9 +57,9 @@ field_type:
       filters:
         -
           class: solr.SynonymFilterFactory
-          ignoreCase: true
           synonyms: synonyms_und.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -130,6 +130,16 @@ solr_configs:
             -
               name: distanceMeasure
               VALUE: internal
+          float:
+            -
+              name: accuracy
+              VALUE: '0.5'
+            -
+              name: maxQueryFrequency
+              VALUE: '0.01'
+            -
+              name: thresholdTokenFrequency
+              VALUE: '0.01'
           int:
             -
               name: maxEdits
@@ -143,16 +153,6 @@ solr_configs:
             -
               name: minQueryLength
               VALUE: '4'
-          float:
-            -
-              name: accuracy
-              VALUE: '0.5'
-            -
-              name: maxQueryFrequency
-              VALUE: '0.01'
-            -
-              name: thresholdTokenFrequency
-              VALUE: '0.01'
           bool:
             -
               name: onlyMorePopular
@@ -160,6 +160,8 @@ solr_configs:
 text_files:
   stopwords: |
 
+  synonyms: |
+    drupal, durpal
   protwords: |
 
   accents: |
@@ -311,5 +313,3 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
-  synonyms: |
-    drupal, durpal

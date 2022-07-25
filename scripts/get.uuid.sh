@@ -1,3 +1,4 @@
+#Yaml parser
 parse_yaml () {
    local prefix=$2
    local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
@@ -14,6 +15,7 @@ parse_yaml () {
       }
    }'
 }
+#Get uuid from configs
 cd /var/www/drupal/web/sites/default/files/conf*/sync
 eval $(parse_yaml system.site.yml)
 echo $uuid

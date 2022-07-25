@@ -1,4 +1,4 @@
-uuid: 6c65d3ea-49a0-4054-9982-24f507449e2a
+uuid: 7e7a2860-136a-4628-92c3-cc47acb4f102
 langcode: en
 status: true
 dependencies: {  }
@@ -46,8 +46,8 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SnowballPorterFilterFactory
-          protected: protwords_en.txt
           language: English
+          protected: protwords_en.txt
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
     -
@@ -61,9 +61,9 @@ field_type:
       filters:
         -
           class: solr.SynonymFilterFactory
-          ignoreCase: true
           synonyms: synonyms_en.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -86,8 +86,8 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SnowballPorterFilterFactory
-          protected: protwords_en.txt
           language: English
+          protected: protwords_en.txt
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 unstemmed_field_type:
@@ -137,9 +137,9 @@ unstemmed_field_type:
       filters:
         -
           class: solr.SynonymFilterFactory
-          ignoreCase: true
           synonyms: synonyms_en.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -190,6 +190,16 @@ solr_configs:
             -
               name: distanceMeasure
               VALUE: internal
+          float:
+            -
+              name: accuracy
+              VALUE: '0.5'
+            -
+              name: maxQueryFrequency
+              VALUE: '0.01'
+            -
+              name: thresholdTokenFrequency
+              VALUE: '0.01'
           int:
             -
               name: maxEdits
@@ -203,16 +213,6 @@ solr_configs:
             -
               name: minQueryLength
               VALUE: '4'
-          float:
-            -
-              name: accuracy
-              VALUE: '0.5'
-            -
-              name: maxQueryFrequency
-              VALUE: '0.01'
-            -
-              name: thresholdTokenFrequency
-              VALUE: '0.01'
           bool:
             -
               name: onlyMorePopular
@@ -254,6 +254,8 @@ text_files:
     was
     will
     with
+  synonyms: |
+    drupal, durpal
   protwords: |
 
   accents: |
@@ -421,5 +423,3 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
-  synonyms: |
-    drupal, durpal

@@ -1,4 +1,4 @@
-uuid: 5d36576c-e3c5-4e12-a9aa-5f9f3a516490
+uuid: 4eb20c4e-8417-4193-8ed4-caa6374811ac
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - image.style.medium
     - media.type.remote_video
   module:
-    - svg_image
+    - image
 _core:
   default_config_hash: PGGoP-hVkXe_S-GiJRAub4PHDu0KhMExylclrqjdJb4
 id: media.remote_video.media_library
@@ -20,8 +20,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
+      image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -32,5 +32,4 @@ hidden:
   field_media_oembed_video: true
   langcode: true
   name: true
-  search_api_excerpt: true
   uid: true

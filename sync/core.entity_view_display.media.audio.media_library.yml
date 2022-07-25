@@ -1,4 +1,4 @@
-uuid: 5833d762-574d-4731-8cce-d5f1a1e769d9
+uuid: 250858c0-82fd-45a3-acc3-670b1859f7b1
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.audio
   module:
-    - svg_image
+    - image
 _core:
   default_config_hash: tcAUW1Xzq5Tjw5jomR6XKGSgfiXO7QiRAHJBF-n0akg
 id: media.audio.media_library
@@ -20,8 +20,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -32,5 +32,4 @@ hidden:
   field_media_audio_file: true
   langcode: true
   name: true
-  search_api_excerpt: true
   uid: true

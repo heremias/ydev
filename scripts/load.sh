@@ -1,12 +1,13 @@
+#Change directory to run composer installs
 cd drupal
-composer require drupal/gutenberg
+
+#Install modules
 composer require drupal/feeds:3.x-dev
 composer require drupal/tamper:1.x-dev
 composer require drupal/feeds_tamper:2.x-dev
 composer require drupal/cdn
 composer require drupal/stage_file_proxy
 composer require drupal/fontawesome
-composer require drupal/advagg
 composer require drupal/media_library_theme_reset
 composer require drupal/field_group
 composer require drupal/layout_builder_admin_theme
@@ -14,7 +15,6 @@ composer require drupal/webform
 composer require drupal/views_taxonomy_term_name_depth
 composer require drupal/views_fieldsets
 composer require oomphinc/composer-installers-extender
-composer require npm-asset/jquery-ui-touch-punch
 composer require drupal/jquery_ui_touch_punch
 composer require npm-asset/jquery-ui-touch-punch
 composer require drupal/better_exposed_filters
@@ -26,7 +26,6 @@ composer require drupal/pathauto
 composer require drupal/media_library_form_element
 composer require drupal/libraries:3.x-dev
 composer require drupal/extra_css_js
-composer require drupal/addtocal:2.x-dev
 composer require drupal/svg_image
 composer require drupal/image_widget_crop
 composer require drupal/focal_point
@@ -35,7 +34,6 @@ composer require drupal/layout_builder_base:1.x-dev
 composer require drupal/layout_builder_styles:1.x-dev
 composer require drupal/config_filter
 composer require drupal/config_split:2.0.x-dev
-composer require drupal/gutenberg_bs_blocks:1.0.0-rc1
 composer require drupal/address
 composer require drupal/react_webform_backend:^1.0@beta
 composer require drupal/gin_toolbar:1.x-dev
@@ -48,7 +46,6 @@ composer require drupal/geolocation
 composer require drupal/feeds_ex:^1.0@beta
 composer require drupal/recurring_events:2.0.x-dev
 composer require drupal/search_api
-composer require drupal/slick
 composer require drupal/facets
 composer require drupal/jsonapi_extras:^3.20
 composer require drupal/selective_better_exposed_filters
@@ -91,23 +88,16 @@ composer require drupal/openy_carnation:^2
 composer require drupal/openy_rose:^1.1
 composer require drupal/plugin:^2.9
 composer require drupal/search_api_solr:^4.2
-composer require drupal/media_library_importer:^1.0@beta
 composer require drupal/bulk_import_feed_links:^1.0@alpha
-composer require drupal/entity_import:^1.0@alpha
-composer require drupal/content_csv_export_import:^1.0
-composer require drupal/entities_import:^1.2
-composer require drupal/contentimport:^9.3
-composer require drupal/csv_importer:^1.14
-composer require drupal/entity_export_csv:^1.0@beta
 composer require drupal/content_export_yaml:^3.2
-composer require drupal/default_content:^2.0@alpha
-composer require drupal/export_action_for_default_content:^1.0@beta
 composer require drupal/views_bulk_operations:^4.1
 composer require drupal/static_suite:^1.1@alpha
 composer require drupal/graphql_fragment_include:^1.5
+composer require drupal/graphql_node_preview:^1.1
 
-
+#Set permissions in container files system
 cd /var/www/drupal/web/sites/default
 chmod 777 -R files
 
+# Export configs to configs directory
 drush cex -y

@@ -1,3 +1,13 @@
+#Get Tag
+ynumber=$(<yid.txt)
+tag=$(sh ./scripts/get.tag.sh)
+
+
+echo $ynumber
+echo $tag
+
+
+#Yaml parser
 parse_site () {
    local prefix=$2
    local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
@@ -14,5 +24,9 @@ parse_site () {
       }
    }'
 }
-eval $(parse_site site.yml)
+
+#Parse the site values from site.yml !NEEDS refactorby site.$cid.yml
+eval $(parse_site ./sites/$ynumber.$tag.yml)
+
+#Available variables from site.yml
 echo $cid $uuid $tag $sid $ynumber $site

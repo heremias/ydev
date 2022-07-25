@@ -1,4 +1,4 @@
-uuid: 69ea58c2-249d-45ba-9e42-834efb78cd16
+uuid: 0a545f1e-fb15-4575-8c33-ba2e423506e3
 langcode: en
 status: true
 dependencies: {  }
@@ -27,8 +27,8 @@ field_type:
         -
           class: solr.StopFilterFactory
           ignoreCase: true
-          enablePositionIncrements: true
           words: stopwords_und.txt
+          enablePositionIncrements: true
         -
           class: solr.WordDelimiterFilterFactory
           catenateNumbers: 1
@@ -58,14 +58,14 @@ field_type:
       filters:
         -
           class: solr.SynonymFilterFactory
-          ignoreCase: true
           synonyms: synonyms_und.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
-          enablePositionIncrements: true
           words: stopwords_und.txt
+          enablePositionIncrements: true
         -
           class: solr.WordDelimiterFilterFactory
           catenateNumbers: 0
@@ -133,6 +133,8 @@ solr_configs:
 text_files:
   stopwords: |
 
+  synonyms: |
+    drupal, durpal
   protwords: |
 
   accents: |
@@ -284,5 +286,3 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
-  synonyms: |
-    drupal, durpal

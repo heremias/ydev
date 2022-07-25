@@ -1,4 +1,4 @@
-uuid: f7be8e46-2ac8-480f-90cf-bc595fe126cf
+uuid: c290659a-7fb5-407d-b4ab-e1c6b17140ea
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - image.style.media_library
   module:
+    - image
     - media
     - media_library
-    - svg_image
     - user
   enforced:
     module:

@@ -1,18 +1,10 @@
-uuid: 8fae23c3-6a25-4676-afe5-d88d7b2668ff
+uuid: 30a26f35-feb0-4998-9c50-6da84a30e45c
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.from_library.field_reusable_paragraph
     - paragraphs.paragraphs_type.from_library
-  module:
-    - field_layout
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 _core:
   default_config_hash: Bea-FFbHlBuiYLW8Et0hLK6VNECewxpIchDbOtC7IDo
 id: paragraph.from_library.default

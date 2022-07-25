@@ -1,4 +1,4 @@
-uuid: 19224043-ae8d-4ab6-b719-d5212f983d7d
+uuid: c979e4a1-053a-4ed5-a533-d8644471655b
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.document
   module:
-    - svg_image
+    - image
 _core:
   default_config_hash: YcWqjhIlo-2RZUM5ogvRsrKB7M3voF2XB3lVLwgOlLU
 id: media.document.media_library
@@ -20,8 +20,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -32,5 +32,4 @@ hidden:
   field_media_document: true
   langcode: true
   name: true
-  search_api_excerpt: true
   uid: true

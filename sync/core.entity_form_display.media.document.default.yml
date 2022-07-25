@@ -1,4 +1,4 @@
-uuid: b95f6f44-cc5e-4056-a9a4-8bc1aa9de895
+uuid: 3d631393-2884-4259-8307-1830d50b660a
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,8 @@ dependencies:
     - field.field.media.document.field_media_document
     - media.type.document
   module:
-    - field_layout
     - file
-    - layout_discovery
     - path
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 _core:
   default_config_hash: aewrRkePgJzdD5kPOq8JeMcKHs6yat49nE7ZeCQzQZg
 id: media.document.default

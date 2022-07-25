@@ -1,4 +1,4 @@
-uuid: 6d2758d5-9fc3-41b9-b556-dbf0cd4da862
+uuid: fc38eaf2-3d92-4ad1-9e16-d46721171320
 langcode: en
 status: true
 dependencies: {  }
@@ -27,8 +27,8 @@ field_type:
         -
           class: solr.StopFilterFactory
           ignoreCase: true
-          enablePositionIncrements: true
           words: stopwords_en.txt
+          enablePositionIncrements: true
         -
           class: solr.WordDelimiterFilterFactory
           catenateNumbers: 1
@@ -47,8 +47,8 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SnowballPorterFilterFactory
-          protected: protwords_en.txt
           language: English
+          protected: protwords_en.txt
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
     -
@@ -62,14 +62,14 @@ field_type:
       filters:
         -
           class: solr.SynonymFilterFactory
-          ignoreCase: true
           synonyms: synonyms_en.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
-          enablePositionIncrements: true
           words: stopwords_en.txt
+          enablePositionIncrements: true
         -
           class: solr.WordDelimiterFilterFactory
           catenateNumbers: 0
@@ -88,8 +88,8 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SnowballPorterFilterFactory
-          protected: protwords_en.txt
           language: English
+          protected: protwords_en.txt
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 unstemmed_field_type:
@@ -109,8 +109,8 @@ unstemmed_field_type:
         -
           class: solr.StopFilterFactory
           ignoreCase: true
-          enablePositionIncrements: true
           words: stopwords_en.txt
+          enablePositionIncrements: true
         -
           class: solr.WordDelimiterFilterFactory
           catenateNumbers: 1
@@ -140,14 +140,14 @@ unstemmed_field_type:
       filters:
         -
           class: solr.SynonymFilterFactory
-          ignoreCase: true
           synonyms: synonyms_en.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
-          enablePositionIncrements: true
           words: stopwords_en.txt
+          enablePositionIncrements: true
         -
           class: solr.WordDelimiterFilterFactory
           catenateNumbers: 0
@@ -229,6 +229,8 @@ text_files:
     was
     will
     with
+  synonyms: |
+    drupal, durpal
   protwords: |
 
   accents: |
@@ -396,5 +398,3 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
-  synonyms: |
-    drupal, durpal

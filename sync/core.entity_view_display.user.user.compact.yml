@@ -7,7 +7,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - svg_image
+    - image
     - user
 _core:
   default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
@@ -30,4 +30,3 @@ content:
 hidden:
   langcode: true
   member_for: true
-  search_api_excerpt: true

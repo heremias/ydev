@@ -1,3 +1,4 @@
+#Yaml Parser
 parse_yaml () {
    local prefix=$2
    local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
@@ -15,5 +16,9 @@ parse_yaml () {
    }'
 }
 cd ./configs
+
+#Retrieve UUID
 eval $(parse_yaml system.site.yml)
+
+#Available variable $uuid
 echo $uuid
