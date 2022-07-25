@@ -79,3 +79,4 @@ drupal/data
 /--disable-copyfile
 /branches.json
 /*.tar.gz
+/*.tar
